@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: mediumpurple;
+}
+main {
+    flex: 1; /* Gör att huvudinnehållet fyller ut den tillgängliga höjden */
+}
+
+h1{
+    color:black;
+    background-color: mediumpurple;
+}
+
+header{
+    background-image:url(Bilder/pig.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: repeat;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    min-height: 100px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#backToStart {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+    border: black;
+    border-color: black;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: gold;
+}
+
+h2 span{
+    color: goldenrod;
+}
+
+h2{
+    background-color: white;
+}
+
+#diceContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.die {
+    padding: 1%;
+    width: 10%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    border: 2px solid gray;
+    background: hsl(40, 30%, 98%);
+    display: flex;
+    position: absolute;
+}
+
+/* dots */
+.die div {
+    background: black;
+    border-radius: 50%;
+    width: 20%;
+    aspect-ratio: 1/1;
+}
+
+/* Anpassning för varje tärningsvärde */
+.one {
+    justify-content: center;
+    align-items: center;
+}
+
+.two {
+    justify-content: space-around;
+    align-items: center;
+      
+}
+
+.two > :first-child {
+    align-self: flex-start;
+}
+
+.two > :last-child {
+    align-self: flex-end;
+}
+
+.three {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.three > :first-child {
+    align-self: flex-start;
+}
+
+.three > :last-child {
+    align-self: flex-end;
+}
+
+.four {
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-flow: row wrap;
+}
+
+.four > :first-child, .four > :nth-child(2) {
+    align-self: flex-start;
+}
+
+.four > :first-child, .four > :nth-child(3) {
+    margin-right: 50%;
+}
+
+.five {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.five > :first-child, .five > :nth-child(4) {
+    margin-right: 50%;
+}
+
+.five > :nth-child(3) {
+    margin: 0 37.5%;
+    justify-self: center;
+    align-self: center;
+}
+
+.five > :last-child, .five > :nth-child(4) {
+    align-self: flex-end;
+}
+
+.six {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.six > :nth-child(2n+1) {
+    margin-right: 50%;
+}
+
+.six > :nth-child(3), .six > :nth-child(4) {
+    align-self: center;
+}
+
+.six > :nth-child(5), .six > :last-child {
+    align-self: flex-end;
+}
+
+body{
+    margin-bottom: 20%;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tärningsspel Pig</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sqript.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1>Välkommen till tärnginsspelet PIG!</h1>
+        </div>
+    </header>
+   
+    
+    <div id="start">
+        <label for="playerName">Ange ditt namn här:</label>
+        <input type="text" id="playerName" placeholder="Ditt namn" required>
+        <button id="startGame">Starta spelet!</button>
+    </div>
+
+    <div id="game" class="hidden">
+        <h2>Spelare: <span id="displayName"></span></h2>
+        <p>Totala poäng: <span id="totalScore">0</span></p>
+        <p>Omgångens poäng: <span id="roundScore">0</span></p>
+        <p>Antal omgångar: <span id="rounds">0</span></p>
+        
+
+        <div>
+            <button id="rollDice">Kasta tärning</button>
+            <button id="holdScore">Spara poäng</button>
+        </div>
+
+        <p id="message"></p>
+        <button id="restartGame" class="hidden">Starta om </button>
+        <button id="backToStart" class="hidden">Till Start</button>
+
+        
+
+        <div id="diceContainer">
+            <div id="dice" class="die hidden"></div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>
