@@ -14,7 +14,7 @@ h1{
 }
 
 header{
-    background-image:url(Bilder/pig.jpg);
+    background-image:url(../Bilder/pig.jpg);
     background-size:cover;
     background-position: center;
     background-repeat: repeat;
